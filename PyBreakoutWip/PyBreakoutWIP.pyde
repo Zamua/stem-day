@@ -37,6 +37,7 @@ brick2show = True
 # TODO: Define properties for a third brick
 
 def setup():
+    # Set the size of the canvas/screen 
     size(screenw, screenh)
 
 def draw():
@@ -81,6 +82,7 @@ def win():
 
 def drawPaddle():
     # TODO: Change the color of the paddle
+    
     rect(paddlex, paddley, paddlew, paddleh)
 
 def drawBall():
@@ -93,7 +95,7 @@ def drawBall():
     rect(ballx, bally, ballw, ballh)
     
     # Put the pen back to white
-    fill(0, 0, 255)
+    fill(255, 255, 255)
 
 def drawBricks():
     # TODO: Change the color of the bricks
@@ -122,6 +124,7 @@ def drawBricks():
 def moveBall():
     global ballx, bally, speedx, speedy
 
+    # If the ball is below the paddle
     if bally + ballh > paddley:
         # TODO: Split the paddle into 5 collision zones instead of 3
 
