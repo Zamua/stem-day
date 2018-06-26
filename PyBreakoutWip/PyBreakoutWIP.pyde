@@ -82,7 +82,6 @@ def win():
 
 def drawPaddle():
     # TODO: Change the color of the paddle
-    
     rect(paddlex, paddley, paddlew, paddleh)
 
 def drawBall():
@@ -138,7 +137,7 @@ def moveBall():
             speedx = 0
             speedy = -abs(speedy)
 
-        # Move the ball right if collision with right third
+        # Move the ball to the right if collision with right third
         elif (ballx + ballw > paddlex + 2 * paddlew / 3.0) and (ballx < paddlex + paddlew):
             speedx = 5
             speedy = -abs(speedy)
