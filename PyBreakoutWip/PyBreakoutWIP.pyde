@@ -190,8 +190,5 @@ def checkCollision(brickx, bricky):
     brickh (the height of a brick) is accessible as a global variable.
     brickw (the width of a brick)  is accessible as a global variable.
     """
-
-    return ((ballx < brickx + brickw) and
-            (ballx + ballw > brickx) and
-            (bally < bricky + brickh) and
-            (bally + ballh > bricky))
+    
+    pass
